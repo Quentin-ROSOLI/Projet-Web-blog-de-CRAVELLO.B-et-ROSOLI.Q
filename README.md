@@ -88,9 +88,7 @@ Le projet est réalisé par :
 * **CRAVELLO.B**
 * **ROSOLI.Q**
 
-Nous utiliserons **GitHub** pour déposer et partager le développement du site.
-
-[Accéder au projet sur GitHub](https://github.com/)
+Voici le lien permettant d'accéder à notre Web Blob : http://bastien.kesug.com
 
 ---
 
