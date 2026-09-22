@@ -26,9 +26,6 @@ Il existe beaucoup de moteurs de blogs, comme **WordPress** et **Blogger**, mais
 
 > **JavaScript (JS)** est un langage utilisé pour **rendre une page Web interactive et dynamique**.
 
-### PHP
-
-> **PHP** est un langage utilisé principalement côté serveur pour **créer des pages Web dynamiques et traiter des données**.
 
 ---
 
@@ -56,7 +53,6 @@ Le site devra contenir :
 | HTML        | Structure des pages        |
 | CSS         | Mise en forme du site      |
 | JavaScript  | Interactivité et dynamisme |
-| PHP         | Traitement côté serveur    |
 | GitHub      | Dépôt et partage du projet |
 
 ---
