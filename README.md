@@ -37,6 +37,7 @@ Le site devra contenir :
 
 * **4 à 5 pages**
 * Une page contenant du texte
+* Un carrousel
 * Une page contenant un formulaire de contact
 * Une page contenant des images et des vidéos
 * Une navigation entre les différentes pages
