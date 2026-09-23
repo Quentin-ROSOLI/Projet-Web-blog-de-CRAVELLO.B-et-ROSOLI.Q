@@ -10,17 +10,13 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">
-          ✦
-        </span>
-        <span>
-          COSMOS
-          <small>
-            ATLAS CÉLESTE
-          </small>
-        </span>
-      </a>
+      <div class="brand">
+        <button class="brand-mark easter-trigger" type="button" aria-label="Ouvrir la carte de l’étoile secrète">✦</button>
+        <a class="brand-name" href="index.html">
+          <span>COSMOS</span>
+          <small>ATLAS CÉLESTE</small>
+        </a>
+      </div>
       <nav>
         <ul class="barre">
           <li>
@@ -91,8 +87,18 @@
         </form>
       </section>
     </main>
+    
+
+    <section class="video-feature" aria-labelledby="featured-video-title">
+      <span class="eyebrow">Vidéo à découvrir</span>
+      <h2 id="featured-video-title">Comment communiquer avec les sondes lointaines ?</h2>
+      <p>Découvrez comment le réseau d’antennes du Deep Space Network transmet des signaux aux engins spatiaux.</p>
+      <a class="video-link" href="https://www.jpl.nasa.gov/edu/resources/video/how-do-we-communicate-with-faraway-spacecraft/" target="_blank" rel="noopener noreferrer">Voir la vidéo<span aria-hidden="true">↗</span></a>
+    </section>
+
     <footer>
       Projet réalisé par Quentin ROSOLI et Bastien CRAVELLO — BTS CIEL IR 2e année
+      <span class="easter-hint">Certaines étoiles du logo cachent un peu de magie.</span>
     </footer>
     <script src="app.js">
     </script>
