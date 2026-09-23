@@ -59,7 +59,7 @@ Le site devra contenir :
 
 ## Organisation du projet
 
-Le projet sera organisé avec des fichiers HTML, CSS, JavaScript et PHP.
+Le projet sera organisé avec des fichiers HTML, CSS, JavaScript.
 
 Exemple :
 
