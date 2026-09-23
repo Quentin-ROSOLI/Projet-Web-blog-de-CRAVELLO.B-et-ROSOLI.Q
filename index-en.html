@@ -22,23 +22,13 @@
 
     <header class="site-header">
 
-      <a class="brand" href="index-en.html">
-
-        <span class="brand-mark">
-          ✦
-        </span>
-
-        <span>
-          COSMOS
-
-          <small>
-            CELESTIAL ATLAS
-          </small>
-
-        </span>
-
-      </a>
-
+      <div class="brand">
+        <button class="brand-mark easter-trigger" type="button" aria-label="Open the secret star card">✦</button>
+        <a class="brand-name" href="index-en.html">
+          <span>COSMOS</span>
+          <small>CELESTIAL ATLAS</small>
+        </a>
+      </div>
       <nav>
 
         <ul class="barre">
@@ -110,10 +100,21 @@
     </main>
 
 
+    
+
+    <section class="video-feature" aria-labelledby="featured-video-title">
+      <span class="eyebrow">Featured video</span>
+      <h2 id="featured-video-title">Hubble’s Eye on the Universe</h2>
+      <p>A journey through stars, nebulae and galaxies.</p>
+      <a class="video-link" href="https://www.jpl.nasa.gov/videos/hubbles-eye-on-the-universe/" target="_blank" rel="noopener noreferrer">Watch the video<span aria-hidden="true">↗</span></a>
+    </section>
+
     <footer>
       A project by Quentin ROSOLI and Bastien CRAVELLO — 2nd-year BTS CIEL IR
+      <span class="easter-hint">Some stars in the logo hide a little magic.</span>
     </footer>
 
+      <script src="app.js"></script>
   </body>
 
 </html>

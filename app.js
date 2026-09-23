@@ -127,3 +127,49 @@ if (form) {
     form.reset();
   });
 }
+
+
+// Hidden easter egg: click the small star in the site logo.
+const secretStar = document.querySelector('.easter-trigger');
+if (secretStar) {
+  const isEnglish = document.documentElement.lang === 'en';
+  const secretModal = document.createElement('div');
+  secretModal.className = 'modal';
+  secretModal.id = 'easter-egg-modal';
+  secretModal.setAttribute('aria-hidden', 'true');
+  secretModal.innerHTML = `
+    <article class="modal-content" role="dialog" aria-modal="true" aria-labelledby="easter-title">
+      <button class="close" type="button" aria-label="${isEnglish ? 'Close' : 'Fermer'}">×</button>
+      <img class="modal-image easter-art" src="https://cdn.pixabay.com/photo/2018/01/29/01/22/unicorn-3115021_1280.jpg" alt="${isEnglish ? 'Colorful unicorn illustration with a galaxy theme' : 'Illustration colorée de licorne sur le thème de la galaxie'}">
+      <div class="modal-text">
+        <span class="eyebrow">${isEnglish ? 'A little cosmic secret' : 'Petit secret cosmique'}</span>
+        <h2 id="easter-title">${isEnglish ? 'Space unicorn' : 'Licorne de l’espace'}</h2>
+        <p>${isEnglish ? 'You found the atlas’s hidden star! No unicorns have been spotted among the nebulae (yet), but there is always room for a little wonder.' : 'Vous avez trouvé l’étoile secrète de l’atlas ! Aucune licorne n’a encore été repérée parmi les nébuleuses, mais il reste toujours une petite place pour l’émerveillement.'}</p>
+        <p class="image-credit">Image · <a href="https://pixabay.com/illustrations/unicorn-galaxy-fantasy-star-cosmic-3115021/" target="_blank" rel="noopener noreferrer">Pixabay</a></p>
+        <div class="modal-meta">${isEnglish ? 'Click outside the card or press Escape to return to the stars.' : 'Cliquez hors de la carte ou appuyez sur Échap pour retrouver les étoiles.'}</div>
+      </div>
+    </article>`;
+  document.body.append(secretModal);
+  const secretClose = secretModal.querySelector('.close');
+  let previousFocus;
+  const closeSecret = () => {
+    secretModal.classList.remove('open');
+    secretModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    previousFocus?.focus();
+  };
+  secretStar.addEventListener('click', () => {
+    previousFocus = secretStar;
+    secretModal.classList.add('open');
+    secretModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    secretClose.focus();
+  });
+  secretClose.addEventListener('click', closeSecret);
+  secretModal.addEventListener('click', event => {
+    if (event.target === secretModal) closeSecret();
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && secretModal.classList.contains('open')) closeSecret();
+  });
+}

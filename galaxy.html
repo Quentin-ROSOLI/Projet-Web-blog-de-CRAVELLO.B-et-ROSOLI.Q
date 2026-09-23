@@ -10,17 +10,13 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">
-          ✦
-        </span>
-        <span>
-          COSMOS
-          <small>
-            ATLAS CÉLESTE
-          </small>
-        </span>
-      </a>
+      <div class="brand">
+        <button class="brand-mark easter-trigger" type="button" aria-label="Ouvrir la carte de l’étoile secrète">✦</button>
+        <a class="brand-name" href="index.html">
+          <span>COSMOS</span>
+          <small>ATLAS CÉLESTE</small>
+        </a>
+      </div>
       <nav>
         <ul class="barre">
           <li>
@@ -142,8 +138,18 @@
         </div>
       </article>
     </div>
+    
+
+    <section class="video-feature" aria-labelledby="featured-video-title">
+      <span class="eyebrow">Vidéo à découvrir</span>
+      <h2 id="featured-video-title">Quand les galaxies entrent en collision</h2>
+      <p>Suivez la rencontre de deux galaxies spirales à travers plusieurs longueurs d’onde.</p>
+      <a class="video-link" href="https://svs.gsfc.nasa.gov/30941" target="_blank" rel="noopener noreferrer">Voir la vidéo<span aria-hidden="true">↗</span></a>
+    </section>
+
     <footer>
       Projet réalisé par Quentin ROSOLI et Bastien CRAVELLO — BTS CIEL IR 2e année
+      <span class="easter-hint">Certaines étoiles du logo cachent un peu de magie.</span>
     </footer>
     <script src="app.js">
     </script>
