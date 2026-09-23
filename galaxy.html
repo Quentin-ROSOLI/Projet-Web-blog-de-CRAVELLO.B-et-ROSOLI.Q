@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Cosmos — Galaxies
+    </title>
+    <link rel="stylesheet" href="style.css?v=3">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">
+          ✦
+        </span>
+        <span>
+          COSMOS
+          <small>
+            ATLAS CÉLESTE
+          </small>
+        </span>
+      </a>
+      <nav>
+        <ul class="barre">
+          <li>
+            <a href="index.html">
+              Accueil
+            </a>
+          </li>
+          <li>
+            <a class="active" href="galaxy.html">
+              Galaxies
+            </a>
+          </li>
+          <li>
+            <a href="ciel_profond.html">
+              Ciel profond
+            </a>
+          </li>
+          <li>
+            <a href="voie_lactée.html">
+              Voie lactée
+            </a>
+          </li>
+          <li>
+            <a href="contact.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="language-switch" href="galaxy-en.html" lang="en" aria-label="View this site in English">EN</a>
+    </header>
+    <main>
+      <section class="page-intro">
+        <span class="eyebrow">
+          Collection 01
+        </span>
+        <h1>
+          Les galaxies
+        </h1>
+        <p>
+          Des îles d’étoiles, de gaz et de matière noire. Approchez-vous d’une image pour révéler son histoire.
+        </p>
+      </section>
+      <section class="explore-grid" aria-label="Galerie de galaxies">
+        <button class="object-card" data-title="Andromède" data-kind="Galaxie spirale" data-image="media/andromede.jpg" data-description="Notre grande voisine cosmique est la galaxie spirale la plus proche de la Voie lactée. Elle se situe à environ 2,5 millions d’années-lumière et se rapproche lentement de nous.">
+          <img src="media/andromede.jpg" alt="Galaxie d’Andromède">
+          <span class="hint">
+            CLIQUER POUR ZOOMER
+          </span>
+          <span class="card-label">
+            <small>
+              Messier 31
+            </small>
+            <strong>
+              Andromède
+            </strong>
+          </span>
+        </button>
+        <button class="object-card" data-title="La Roue du Chariot" data-kind="Galaxie à anneau" data-image="media/roue-interactive.png" data-description="Cette galaxie possède un spectaculaire anneau d’étoiles, né d’une collision avec une galaxie plus petite. Le choc a propagé une onde de formation d’étoiles à travers son disque.">
+          <img src="media/roue-interactive.png" alt="Galaxie de la Roue du Chariot">
+          <span class="hint">
+            CLIQUER POUR ZOOMER
+          </span>
+          <span class="card-label">
+            <small>
+              Collision cosmique
+            </small>
+            <strong>
+              La Roue du Chariot
+            </strong>
+          </span>
+        </button>
+        <button class="object-card" data-title="La galaxie du Triangle" data-kind="Galaxie spirale" data-image="media/triangle.jpg" data-description="M33 est l’une des principales galaxies du Groupe local. Son aspect ouvert et ses bras bleutés trahissent une intense formation d’étoiles.">
+          <img src="media/triangle.jpg" alt="Galaxie du Triangle">
+          <span class="hint">
+            CLIQUER POUR ZOOMER
+          </span>
+          <span class="card-label">
+            <small>
+              Messier 33
+            </small>
+            <strong>
+              Le Triangle
+            </strong>
+          </span>
+        </button>
+        <button class="object-card" data-title="Grand Nuage de Magellan" data-kind="Galaxie satellite" data-image="media/magellan.jpg" data-description="Visible dans le ciel austral, le Grand Nuage de Magellan est une galaxie naine compagnon de la Voie lactée, riche en régions où naissent de nouvelles étoiles.">
+          <img src="media/magellan.jpg" alt="Grand Nuage de Magellan">
+          <span class="hint">
+            CLIQUER POUR ZOOMER
+          </span>
+          <span class="card-label">
+            <small>
+              Voisine australe
+            </small>
+            <strong>
+              Grand Nuage de Magellan
+            </strong>
+          </span>
+        </button>
+      </section>
+    </main>
+    <div class="modal" id="object-modal" aria-hidden="true">
+      <article class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="close" aria-label="Fermer">
+          ×
+        </button>
+        <img class="modal-image" src="" alt="">
+        <div class="modal-text">
+          <span class="eyebrow" id="modal-kind">
+          </span>
+          <h2 id="modal-title">
+          </h2>
+          <p id="modal-description">
+          </p>
+          <div class="modal-meta">
+            Cliquez hors de la fiche ou appuyez sur Échap pour revenir au ciel.
+          </div>
+        </div>
+      </article>
+    </div>
+    <footer>
+      Projet réalisé par Quentin ROSOLI et Bastien CRAVELLO — BTS CIEL IR 2e année
+    </footer>
+    <script src="app.js">
+    </script>
+  </body>
+</html>

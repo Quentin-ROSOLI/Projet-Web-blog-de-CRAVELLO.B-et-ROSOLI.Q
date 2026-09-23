@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Cosmos — Galaxies
+    </title>
+    <link rel="stylesheet" href="style.css?v=3">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index-en.html">
+        <span class="brand-mark">
+          ✦
+        </span>
+        <span>
+          COSMOS
+          <small>
+            CELESTIAL ATLAS
+          </small>
+        </span>
+      </a>
+      <nav>
+        <ul class="barre">
+          <li>
+            <a href="index-en.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="active" href="galaxy-en.html">
+              Galaxies
+            </a>
+          </li>
+          <li>
+            <a href="ciel_profond-en.html">
+              Deep sky
+            </a>
+          </li>
+          <li>
+            <a href="voie_lactée-en.html">
+              Milky Way
+            </a>
+          </li>
+          <li>
+            <a href="contact-en.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="language-switch" href="galaxy.html" lang="fr" aria-label="View this site in French">FR</a>
+    </header>
+    <main>
+      <section class="page-intro">
+        <span class="eyebrow">
+          Collection 01
+        </span>
+        <h1>
+          Galaxies
+        </h1>
+        <p>
+          Islands of stars, gas and dark matter. Select an image to uncover its story.
+        </p>
+      </section>
+      <section class="explore-grid" aria-label="Galerie de galaxies">
+        <button class="object-card" data-title="Andromeda" data-kind="Spiral galaxy" data-image="media/andromede.jpg" data-description="Our closest large galactic neighbour is the nearest spiral galaxy to the Milky Way. It lies about 2.5 million light-years away and is slowly approaching us.">
+          <img src="media/andromede.jpg" alt="Andromeda Galaxy">
+          <span class="hint">
+            CLICK TO ZOOM
+          </span>
+          <span class="card-label">
+            <small>
+              Messier 31
+            </small>
+            <strong>
+              Andromeda
+            </strong>
+          </span>
+        </button>
+        <button class="object-card" data-title="The Cartwheel Galaxy" data-kind="Ring galaxy" data-image="media/roue-interactive.png" data-description="This galaxy has a spectacular ring of stars, created by a collision with a smaller galaxy. The impact sent a wave of star formation across its disc.">
+          <img src="media/roue-interactive.png" alt="Cartwheel Galaxy">
+          <span class="hint">
+            CLICK TO ZOOM
+          </span>
+          <span class="card-label">
+            <small>
+              Cosmic collision
+            </small>
+            <strong>
+              The Cartwheel Galaxy
+            </strong>
+          </span>
+        </button>
+        <button class="object-card" data-title="La galaxie du Triangle" data-kind="Spiral galaxy" data-image="media/triangle.jpg" data-description="M33 is one of the major galaxies in the Local Group. Its open shape and blue arms reveal intense star formation.">
+          <img src="media/triangle.jpg" alt="Triangulum Galaxy">
+          <span class="hint">
+            CLICK TO ZOOM
+          </span>
+          <span class="card-label">
+            <small>
+              Messier 33
+            </small>
+            <strong>
+              Triangulum
+            </strong>
+          </span>
+        </button>
+        <button class="object-card" data-title="Large Magellanic Cloud" data-kind="Satellite galaxy" data-image="media/magellan.jpg" data-description="Visible in the southern sky, the Large Magellanic Cloud is a dwarf companion galaxy to the Milky Way, rich in regions where new stars are born.">
+          <img src="media/magellan.jpg" alt="Large Magellanic Cloud">
+          <span class="hint">
+            CLICK TO ZOOM
+          </span>
+          <span class="card-label">
+            <small>
+              Southern neighbour
+            </small>
+            <strong>
+              Large Magellanic Cloud
+            </strong>
+          </span>
+        </button>
+      </section>
+    </main>
+    <div class="modal" id="object-modal" aria-hidden="true">
+      <article class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="close" aria-label="Close">
+          ×
+        </button>
+        <img class="modal-image" src="" alt="">
+        <div class="modal-text">
+          <span class="eyebrow" id="modal-kind">
+          </span>
+          <h2 id="modal-title">
+          </h2>
+          <p id="modal-description">
+          </p>
+          <div class="modal-meta">
+            Click outside the panel or press Escape to return to the sky.
+          </div>
+        </div>
+      </article>
+    </div>
+    <footer>
+      A project by Quentin ROSOLI and Bastien CRAVELLO — 2nd-year BTS CIEL IR
+    </footer>
+    <script src="app.js">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,214 @@
+<!doctype html>
+
+<html lang="fr">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+      Cosmos — Voie lactée
+    </title>
+    <link rel="stylesheet" href="style.css?v=3">
+
+  </head>
+
+  <body>
+
+    <header class="site-header">
+
+      <a class="brand" href="index.html">
+
+        <span class="brand-mark">
+          ✦
+        </span>
+
+        <span>
+          COSMOS
+
+          <small>
+            ATLAS CÉLESTE
+          </small>
+
+        </span>
+
+      </a>
+
+      <nav>
+
+        <ul class="barre">
+
+          <li>
+            <a href="index.html">
+              Accueil
+            </a>
+          </li>
+
+          <li>
+            <a href="galaxy.html">
+              Galaxies
+            </a>
+          </li>
+
+          <li>
+            <a href="ciel_profond.html">
+              Ciel profond
+            </a>
+          </li>
+
+          <li>
+            <a class="active" href="voie_lactée.html">
+              Voie lactée
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+      <a class="language-switch" href="voie_lactée-en.html" lang="en" aria-label="View this site in English">EN</a>
+
+    </header>
+
+
+
+    <main>
+
+      <section class="page-intro">
+
+        <span class="eyebrow">
+          Collection 03
+        </span>
+
+        <h1>
+          Notre Voie lactée
+        </h1>
+
+        <p>
+          Notre adresse cosmique : une grande galaxie spirale qui abrite des centaines de milliards d’étoiles, dont notre Soleil.
+        </p>
+        
+      </section>
+
+      <section class="explore-grid">
+
+        <button class="object-card" data-title="La Voie lactée au-dessus de nous" data-kind="Panorama nocturne photographique" data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Milky%20way%20panorama.jpg?width=1600" data-description="Cette photographie panoramique montre l’arche lumineuse de notre galaxie vue depuis la Terre. La bande blanche rassemble la lumière d’innombrables étoiles du disque galactique.">
+
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Milky%20way%20panorama.jpg?width=1600" alt="Panorama photographique de la Voie lactée">
+
+          <span class="hint">
+            CLIQUER POUR ZOOMER
+          </span>
+
+          <span class="card-label">
+
+            <small>
+              Vue depuis la Terre
+            </small>
+
+            <strong>
+              La Voie lactée au-dessus de nous
+            </strong>
+
+          </span>
+
+        </button>
+
+        <button class="object-card" data-title="Le Soleil" data-kind="Observation NASA · Solar Dynamics Observatory" data-image="https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26681/PIA26681.jpg" data-description="Voici notre étoile, photographiée par le Solar Dynamics Observatory de la NASA en septembre 2025. Le Soleil est une étoile de type G, à environ 27 000 années-lumière du centre de la Voie lactée.">
+
+          <img src="https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26681/PIA26681.jpg" alt="Le Soleil observé par la NASA">
+
+          <span class="hint">
+            CLIQUER POUR ZOOMER
+          </span>
+
+          <span class="card-label">
+
+            <small>
+              NASA · SDO
+            </small>
+
+            <strong>
+              Le Soleil
+            </strong>
+
+          </span>
+
+        </button>
+
+        <button class="object-card" data-title="Pouponnière d’étoiles de la Carène" data-kind="Nébuleuse de formation stellaire — NASA/ESA Hubble" data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape%20Carina%20Nebula.jpg?width=1600" data-description="Cette véritable image de Hubble révèle un nuage dense de gaz et de poussières dans lequel de nouvelles étoiles se forment. Ces régions sont les berceaux stellaires de notre galaxie.">
+
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape%20Carina%20Nebula.jpg?width=1600" alt="Région de formation d’étoiles dans la nébuleuse de la Carène">
+
+          <span class="hint">
+            CLIQUER POUR ZOOMER
+          </span>
+
+          <span class="card-label">
+
+            <small>
+              NGC 3372 · Hubble
+            </small>
+
+            <strong>
+              Pouponnière d’étoiles
+            </strong>
+
+          </span>
+
+        </button>
+
+      </section>
+
+    </main>
+
+
+    <div class="modal" id="object-modal" aria-hidden="true">
+
+      <article class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+
+        <button class="close" aria-label="Fermer">
+          ×
+        </button>
+
+        <img class="modal-image" src="" alt="">
+
+
+        <div class="modal-text">
+          <span class="eyebrow" id="modal-kind">
+          </span>
+
+          <h2 id="modal-title">
+          </h2>
+
+          <p id="modal-description">
+          </p>
+
+          <div class="modal-meta">
+            Cliquez hors de la fiche ou appuyez sur Échap pour revenir au ciel.
+          </div>
+
+        </div>
+
+      </article>
+    </div>
+
+
+    <footer>
+      Projet réalisé par Quentin ROSOLI et Bastien CRAVELLO — BTS CIEL IR 2e année
+    </footer>
+
+
+    <script src="app.js">
+    </script>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,214 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+      Cosmos — Milky Way
+    </title>
+    <link rel="stylesheet" href="style.css?v=3">
+
+  </head>
+
+  <body>
+
+    <header class="site-header">
+
+      <a class="brand" href="index-en.html">
+
+        <span class="brand-mark">
+          ✦
+        </span>
+
+        <span>
+          COSMOS
+
+          <small>
+            CELESTIAL ATLAS
+          </small>
+
+        </span>
+
+      </a>
+
+      <nav>
+
+        <ul class="barre">
+
+          <li>
+            <a href="index-en.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="galaxy-en.html">
+              Galaxies
+            </a>
+          </li>
+
+          <li>
+            <a href="ciel_profond-en.html">
+              Deep sky
+            </a>
+          </li>
+
+          <li>
+            <a class="active" href="voie_lactée-en.html">
+              Milky Way
+            </a>
+          </li>
+
+          <li>
+            <a href="contact-en.html">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+      <a class="language-switch" href="voie_lactée.html" lang="fr" aria-label="View this site in French">FR</a>
+
+    </header>
+
+
+
+    <main>
+
+      <section class="page-intro">
+
+        <span class="eyebrow">
+          Collection 03
+        </span>
+
+        <h1>
+          Our Milky Way
+        </h1>
+
+        <p>
+          Our cosmic home: a vast spiral galaxy containing hundreds of billions of stars, including our Sun.
+        </p>
+        
+      </section>
+
+      <section class="explore-grid">
+
+        <button class="object-card" data-title="The Milky Way above us" data-kind="Night-sky photograph" data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Milky%20way%20panorama.jpg?width=1600" data-description="This panoramic photograph shows the luminous arch of our galaxy as seen from Earth. The white band combines the light of countless stars in the galactic disc.">
+
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Milky%20way%20panorama.jpg?width=1600" alt="Panorama photographique de la Milky Way">
+
+          <span class="hint">
+            CLICK TO ZOOM
+          </span>
+
+          <span class="card-label">
+
+            <small>
+              View from Earth
+            </small>
+
+            <strong>
+              The Milky Way above us
+            </strong>
+
+          </span>
+
+        </button>
+
+        <button class="object-card" data-title="The Sun" data-kind="NASA observation · Solar Dynamics Observatory" data-image="https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26681/PIA26681.jpg" data-description="This is our star, photographed by NASA’s Solar Dynamics Observatory in September 2025. The Sun is a G-type star, about 27,000 light-years from the centre of the Milky Way.">
+
+          <img src="https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26681/PIA26681.jpg" alt="The Sun observed by NASA">
+
+          <span class="hint">
+            CLICK TO ZOOM
+          </span>
+
+          <span class="card-label">
+
+            <small>
+              NASA · SDO
+            </small>
+
+            <strong>
+              The Sun
+            </strong>
+
+          </span>
+
+        </button>
+
+        <button class="object-card" data-title="Carina stellar nursery" data-kind="Star-forming nebula — NASA/ESA Hubble" data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape%20Carina%20Nebula.jpg?width=1600" data-description="This Hubble image reveals a dense cloud of gas and dust where new stars are forming. These regions are the stellar nurseries of our galaxy.">
+
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape%20Carina%20Nebula.jpg?width=1600" alt="Star-forming region in the Carina Nebula">
+
+          <span class="hint">
+            CLICK TO ZOOM
+          </span>
+
+          <span class="card-label">
+
+            <small>
+              NGC 3372 · Hubble
+            </small>
+
+            <strong>
+              Stellar nursery
+            </strong>
+
+          </span>
+
+        </button>
+
+      </section>
+
+    </main>
+
+
+    <div class="modal" id="object-modal" aria-hidden="true">
+
+      <article class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+
+        <button class="close" aria-label="Close">
+          ×
+        </button>
+
+        <img class="modal-image" src="" alt="">
+
+
+        <div class="modal-text">
+          <span class="eyebrow" id="modal-kind">
+          </span>
+
+          <h2 id="modal-title">
+          </h2>
+
+          <p id="modal-description">
+          </p>
+
+          <div class="modal-meta">
+            Click outside the panel or press Escape to return to the sky.
+          </div>
+
+        </div>
+
+      </article>
+    </div>
+
+
+    <footer>
+      A project by Quentin ROSOLI and Bastien CRAVELLO — 2nd-year BTS CIEL IR
+    </footer>
+
+
+    <script src="app.js">
+    </script>
+
+
+  </body>
+
+</html>

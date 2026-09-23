@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Cosmos — Contact
+    </title>
+    <link rel="stylesheet" href="style.css?v=3">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">
+          ✦
+        </span>
+        <span>
+          COSMOS
+          <small>
+            ATLAS CÉLESTE
+          </small>
+        </span>
+      </a>
+      <nav>
+        <ul class="barre">
+          <li>
+            <a href="index.html">
+              Accueil
+            </a>
+          </li>
+          <li>
+            <a href="galaxy.html">
+              Galaxies
+            </a>
+          </li>
+          <li>
+            <a href="ciel_profond.html">
+              Ciel profond
+            </a>
+          </li>
+          <li>
+            <a href="voie_lactée.html">
+              Voie lactée
+            </a>
+          </li>
+          <li>
+            <a class="active" href="contact.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="language-switch" href="contact-en.html" lang="en" aria-label="View this site in English">EN</a>
+    </header>
+    <main class="contact-wrap">
+      <section class="contact-card">
+        <span class="eyebrow">
+          Message vers la Terre
+        </span>
+        <h1>
+          Restons en orbite.
+        </h1>
+        <p>
+          Une question ou une suggestion pour notre atlas céleste ? Envoyez-nous un signal.
+        </p>
+        <form id="contact-form">
+          <div class="form-grid">
+            <label>
+              Prénom
+              <input required name="prenom" placeholder="Votre prénom">
+            </label>
+            <label>
+              Nom
+              <input required name="nom" placeholder="Votre nom">
+            </label>
+            <label>
+              Adresse e-mail
+              <input required type="email" name="email" placeholder="vous@exemple.fr">
+            </label>
+            <label>
+              Votre message
+              <textarea required name="message" placeholder="Écrivez votre message...">
+              </textarea>
+            </label>
+          </div>
+          <button class="button send" type="submit">
+            Envoyer le signal →
+          </button>
+          <p class="form-note" aria-live="polite">
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer>
+      Projet réalisé par Quentin ROSOLI et Bastien CRAVELLO — BTS CIEL IR 2e année
+    </footer>
+    <script src="app.js">
+    </script>
+  </body>
+</html>

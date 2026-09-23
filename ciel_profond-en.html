@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Cosmos — Deep sky
+    </title>
+    <link rel="stylesheet" href="style.css?v=3">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index-en.html">
+        <span class="brand-mark">
+          ✦
+        </span>
+        <span>
+          COSMOS
+          <small>
+            CELESTIAL ATLAS
+          </small>
+        </span>
+      </a>
+      <nav>
+        <ul class="barre">
+          <li>
+            <a href="index-en.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="galaxy-en.html">
+              Galaxies
+            </a>
+          </li>
+          <li>
+            <a class="active" href="ciel_profond-en.html">
+              Deep sky
+            </a>
+          </li>
+          <li>
+            <a href="voie_lactée-en.html">
+              Milky Way
+            </a>
+          </li>
+          <li>
+            <a href="contact-en.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="language-switch" href="ciel_profond.html" lang="fr" aria-label="View this site in French">FR</a>
+    </header>
+    <main>
+      <section class="page-intro">
+        <span class="eyebrow">
+          Collection 02
+        </span>
+        <h1>
+          The deep sky
+        </h1>
+        <p>
+          Nebulae, clusters and distant galaxies: faint to the naked eye, yet rich with detail through a telescope.
+        </p>
+      </section>
+      <section class="explore-grid">
+        <button class="object-card" data-title="Bubble Nebula" data-kind="Emission nebula — NOIRLab image" data-image="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Bubble%20Nebula%20%28NGC%207635%29%20%28noao0702a%29.jpg?width=1600" data-description="NGC 7635 is a shell of ionized gas shaped by radiation from the massive star at the bubble’s centre. This image shows the real nebula, located in Cassiopeia.">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Bubble%20Nebula%20%28NGC%207635%29%20%28noao0702a%29.jpg?width=1600" alt="Bubble Nebula imaged by NOIRLab">
+          <span class="hint">
+            CLICK TO ZOOM
+          </span>
+          <span class="card-label">
+            <small>
+              NGC 7635 · NOIRLab
+            </small>
+            <strong>
+              Bubble Nebula
+            </strong>
+          </span>
+        </button>
+        <button class="object-card" data-title="Carina Nebula" data-kind="Star-forming region — NASA/ESA Hubble" data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape%20Carina%20Nebula.jpg?width=1600" data-description="This Hubble image shows a pillar of gas and dust in the Carina Nebula. These interstellar clouds are where new stars form.">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape%20Carina%20Nebula.jpg?width=1600" alt="Carina Nebula observed by Hubble">
+          <span class="hint">
+            CLICK TO ZOOM
+          </span>
+          <span class="card-label">
+            <small>
+              NGC 3372 · Hubble
+            </small>
+            <strong>
+              Carina Nebula
+            </strong>
+          </span>
+        </button>
+        <button class="object-card" data-title="Andromeda" data-kind="Deep-sky galaxy" data-image="media/andromede.jpg" data-description="Our great neighbour is a true spiral galaxy about 2.5 million light-years away. This photograph reveals its bright core and extended disc.">
+          <img src="media/andromede.jpg" alt="Andromeda Galaxy">
+          <span class="hint">
+            CLICK TO ZOOM
+          </span>
+          <span class="card-label">
+            <small>
+              M31
+            </small>
+            <strong>
+              Andromeda
+            </strong>
+          </span>
+        </button>
+      </section>
+    </main>
+    <div class="modal" id="object-modal" aria-hidden="true">
+      <article class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="close" aria-label="Close">
+          ×
+        </button>
+        <img class="modal-image" src="" alt="">
+        <div class="modal-text">
+          <span class="eyebrow" id="modal-kind">
+          </span>
+          <h2 id="modal-title">
+          </h2>
+          <p id="modal-description">
+          </p>
+          <div class="modal-meta">
+            Click outside the panel or press Escape to return to the sky.
+          </div>
+        </div>
+      </article>
+    </div>
+    <footer>
+      A project by Quentin ROSOLI and Bastien CRAVELLO — 2nd-year BTS CIEL IR
+    </footer>
+    <script src="app.js">
+    </script>
+  </body>
+</html>

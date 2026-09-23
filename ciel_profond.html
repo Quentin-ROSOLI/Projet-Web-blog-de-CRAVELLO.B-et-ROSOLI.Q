@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Cosmos — Ciel profond
+    </title>
+    <link rel="stylesheet" href="style.css?v=3">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">
+          ✦
+        </span>
+        <span>
+          COSMOS
+          <small>
+            ATLAS CÉLESTE
+          </small>
+        </span>
+      </a>
+      <nav>
+        <ul class="barre">
+          <li>
+            <a href="index.html">
+              Accueil
+            </a>
+          </li>
+          <li>
+            <a href="galaxy.html">
+              Galaxies
+            </a>
+          </li>
+          <li>
+            <a class="active" href="ciel_profond.html">
+              Ciel profond
+            </a>
+          </li>
+          <li>
+            <a href="voie_lactée.html">
+              Voie lactée
+            </a>
+          </li>
+          <li>
+            <a href="contact.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="language-switch" href="ciel_profond-en.html" lang="en" aria-label="View this site in English">EN</a>
+    </header>
+    <main>
+      <section class="page-intro">
+        <span class="eyebrow">
+          Collection 02
+        </span>
+        <h1>
+          Le ciel profond
+        </h1>
+        <p>
+          Nébuleuses, amas et galaxies lointaines : des objets discrets à l’œil nu, mais foisonnants à travers un télescope.
+        </p>
+      </section>
+      <section class="explore-grid">
+        <button class="object-card" data-title="Nébuleuse de la Bulle" data-kind="Nébuleuse en émission — image NOIRLab" data-image="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Bubble%20Nebula%20%28NGC%207635%29%20%28noao0702a%29.jpg?width=1600" data-description="NGC 7635 est une coquille de gaz ionisé, sculptée par le rayonnement de l’étoile massive située au cœur de la bulle. L’image présente réellement cette nébuleuse, située dans Cassiopée.">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Bubble%20Nebula%20%28NGC%207635%29%20%28noao0702a%29.jpg?width=1600" alt="Nébuleuse de la Bulle photographiée par NOIRLab">
+          <span class="hint">
+            CLIQUER POUR ZOOMER
+          </span>
+          <span class="card-label">
+            <small>
+              NGC 7635 · NOIRLab
+            </small>
+            <strong>
+              Nébuleuse de la Bulle
+            </strong>
+          </span>
+        </button>
+        <button class="object-card" data-title="Nébuleuse de la Carène" data-kind="Pouponnière d’étoiles — NASA/ESA Hubble" data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape%20Carina%20Nebula.jpg?width=1600" data-description="Cette image du télescope Hubble montre un pilier de gaz et de poussières de la nébuleuse de la Carène. Ces nuages interstellaires abritent la formation de nouvelles étoiles.">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Landscape%20Carina%20Nebula.jpg?width=1600" alt="Nébuleuse de la Carène observée par Hubble">
+          <span class="hint">
+            CLIQUER POUR ZOOMER
+          </span>
+          <span class="card-label">
+            <small>
+              NGC 3372 · Hubble
+            </small>
+            <strong>
+              Nébuleuse de la Carène
+            </strong>
+          </span>
+        </button>
+        <button class="object-card" data-title="Andromède" data-kind="Galaxie du ciel profond" data-image="media/andromede.jpg" data-description="Notre grande voisine est une véritable galaxie spirale située à environ 2,5 millions d’années-lumière. Cette photographie révèle son noyau lumineux et son disque étendu.">
+          <img src="media/andromede.jpg" alt="Galaxie d’Andromède">
+          <span class="hint">
+            CLIQUER POUR ZOOMER
+          </span>
+          <span class="card-label">
+            <small>
+              M31
+            </small>
+            <strong>
+              Andromède
+            </strong>
+          </span>
+        </button>
+      </section>
+    </main>
+    <div class="modal" id="object-modal" aria-hidden="true">
+      <article class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="close" aria-label="Fermer">
+          ×
+        </button>
+        <img class="modal-image" src="" alt="">
+        <div class="modal-text">
+          <span class="eyebrow" id="modal-kind">
+          </span>
+          <h2 id="modal-title">
+          </h2>
+          <p id="modal-description">
+          </p>
+          <div class="modal-meta">
+            Cliquez hors de la fiche ou appuyez sur Échap pour revenir au ciel.
+          </div>
+        </div>
+      </article>
+    </div>
+    <footer>
+      Projet réalisé par Quentin ROSOLI et Bastien CRAVELLO — BTS CIEL IR 2e année
+    </footer>
+    <script src="app.js">
+    </script>
+  </body>
+</html>
